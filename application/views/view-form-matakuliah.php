@@ -1,17 +1,17 @@
 <html>
 
 <head>
-    <title>From Input Matakuliah</html>
+    <title>Form Input Matakuliah</title>
 </head>
 
 <body>
     <center>
-        <from    action="<?    base_url('matakuliah/cetak');   ?>"
+        <form action="<?= base_url('matakuliah/cetak'); ?>"
 method="post">
             <table>
                 <tr>
                     <th colspan="3">
-                        from Input Data Mata Kuliah
+                        Form Input Data Mata Kuliah
                     </th> 
                 <tr>
                     <td colspan="3">
@@ -26,7 +26,7 @@ method="post">
                     </td>                   
                 </tr>
                 <tr>
-                    <th>Kode MTK</th>
+                    <th>Nama MTK</th>
                     <th>:</th>
                     <td> 
                         <input type="text" name="nama" id="nama">
@@ -45,8 +45,8 @@ method="post">
                     </td>
                 </tr>
                 <tr>
-                    <td> colspan="3" align="center">
-                        <input type="submit" value value="Submit">
+                    <td colspan="3" align="center">
+                        <input type="submit" value="Submit">
                     </td>
                 </tr>    
             </table>
