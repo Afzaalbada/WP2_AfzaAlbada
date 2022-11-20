@@ -32,7 +32,7 @@ class User extends CI_Controller
         $this->load->view('user/index', $data); 
         $this->load->view('templates/footer'); 
     } 
-    
+
     public function anggota() 
     { 
         $data['judul'] = 'Data Anggota'; 
@@ -46,7 +46,7 @@ class User extends CI_Controller
         $this->load->view('user/anggota', $data); 
         $this->load->view('templates/footer'); 
     } 
-    
+
     public function ubahProfil() 
     { 
         $data['judul'] = 'Ubah Profil'; 
