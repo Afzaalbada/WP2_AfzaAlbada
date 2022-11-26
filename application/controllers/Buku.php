@@ -1,4 +1,5 @@
 <?php
+
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Buku extends CI_Controller {
@@ -205,13 +206,15 @@ class Buku extends CI_Controller {
         }
     }
 
-    public function hapusKategori() {
+    public function hapusKategori() 
+    {
         $where = ['id' => $this->uri->segment(3)];
         $this->ModelBuku->hapusKategori($where);
         redirect('buku/kategori');
     }
 
-    public function hapusBuku() {
+    public function hapusBuku() 
+    {
         $where = ['id' => $this->uri->segment(3)];
         $this->ModelBuku->hapusBuku($where);
         redirect('buku');
